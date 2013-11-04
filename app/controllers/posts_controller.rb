@@ -4,7 +4,7 @@ def new
 end
 
 def index
-  @post = Post.all
+  @posts = Post.all
 end
 
 def create
@@ -18,3 +18,5 @@ private
   def post_params
     params.require(:post).permit(:title, :text)
   end
+
+end
